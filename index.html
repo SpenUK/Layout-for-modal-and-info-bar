@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
+	<script type="text/javascript">
+		$(document).on('ready', function(){
+			$('.test-modal').on('click', function(){
+				modal.openWith();
+			});
+
+			$('.info-bar, .test-info-bar').on('click', function(){
+				// $(this).animate({top: -40});
+				$('.info-bar').slideToggle();
+			})
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="window-wrapper">
+		<div class="info-bar">
+		</div>
+		<div class="header"></div>
+		<div id="page-wrapper">
+
+
+
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+			<div class="test-block red"></div><div class="test-block blue"></div>
+
+
+
+		</div>
+		<div id="footer-wrapper">
+			<div class="footer">
+				<div class="test test-modal">Modal</div>
+				<div class="test test-info-bar">InfoBar</div>
+			</div>
+		</div>
+		
+	</div>
+	<div id="modal">
+		<div class="modal__shader"></div>
+		<div class="modal__container">
+			<div class="modal__button--dismiss"></div>
+		</div>
+	</div>
+</body>
+</html>
